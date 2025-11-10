@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Satellite Change</title>
+  <link rel="preconnect" href="https://unpkg.com" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <header class="control-bar">
+    <select id="bottomYearSelect"></select>
+    <select id="topYearSelect"></select>
+    <input id="topOpacityRange" type="range" min="0" max="1" step="0.05" value="0.75" />
+    <select id="displayModeSelect">
+      <option value="compare">Compare</option>
+      <option value="highlight">Highlight</option>
+    </select>
+    <label class="water-boost">
+      <input id="waterBoostCheckbox" type="checkbox" />
+      <span>Water</span>
+    </label>
+  </header>
+
+  <div id="mapRoot"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
